@@ -1,7 +1,6 @@
 # popcornisntcorn.com
-A website to commemorate my cousin not knowing that popcorn comes form corn.
 
-The code is too simplistic to be useful the rest is probably over-engineered.
+The code (`main.go`) is too simplistic to be useful the rest is probably over-engineered.
 
 This is also improper image handling, however the needs are very simple so `¯\_(ツ)_/¯`
 
@@ -21,7 +20,7 @@ After building the go binary build
 Then run `docker-compose up` to get it up.
 
 # FAQ
-
+## What's with the labels in the docker-compose.yml
+I'm deploying this to my personal rancher setup that uses traefik. That's what the labels are for and why the file is located in `deploy/notcorn`
 ## What's with the docker-compose.override.yml
-
 It's done like so to isolate the stuff needed locally, we don't want the port open in "production" but we do locally. 
