@@ -1,0 +1,9 @@
+version: '2'
+services:
+  notcorn:
+    image: cloud.canister.io:5000/babic/popcornisntcorn
+    labels:
+      traefik.frontend.rule: Host:www.popcornisntcorn.com
+      traefik.port: '8181'
+      traefik.enable: 'true'
+      io.rancher.container.pull_image: always

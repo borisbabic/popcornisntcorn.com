@@ -1,0 +1,5 @@
+version: "2"
+services:
+    notcorn:
+        ports:
+            - 8181:8181/tcp
